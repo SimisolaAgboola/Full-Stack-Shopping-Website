@@ -53,7 +53,7 @@ export default {
             const email = prompt('Please enter your email to sign in:');
             const auth = getAuth();
             const actionCodeSettings = {
-                url: `http://localhost:8080/products/${this.$route.params.productId}`,
+                url: `https://tshirt-ecommerce-site.onrender.com/products/${this.$route.params.productId}`,
                 handleCodeInApp: true,
             }
             await sendSignInLinkToEmail(auth, email, actionCodeSettings);

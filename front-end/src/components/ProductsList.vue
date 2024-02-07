@@ -11,6 +11,7 @@
             <router-link :to="'/products/' + product.id">
                 <button>View Details</button>
             </router-link>
+        
         </div>
     </div>
 </template>
